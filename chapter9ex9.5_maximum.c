@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 	int high_water_mark(int valores[]) {
-	int marca_alta;
-	int i;
+	int marca_alta;		/* valor actual más grande */
+	int i;			/*indice dentro del array*/
 
 	marca_alta = 0;
 
