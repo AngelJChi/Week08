@@ -3,7 +3,7 @@
 	#include <stdio.h>
 
 void reemplazar(char char_array[]) {
-	int i;
+	int i;			/*indice dentro del array*/
 
 	for (i = 0; i < sizeof(char_array); ++i) {
 		if (char_array[i] == '-') {
@@ -13,7 +13,7 @@ void reemplazar(char char_array[]) {
 }
 
 int main(void) {
-	int i;
+	int i;			/*indice dentro del array*/
 
 	char characteres[] = { 'f', 'o', 'o', '-', 'b', '_', 'r' };
 	reemmplazar(characteres);
