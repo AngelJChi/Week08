@@ -3,8 +3,8 @@
 int main(){
 
 	int contar_palabras(char frase[]) {
-	static int str_idx    = 0;
-	static int contador_de_palabras = 0;
+	static int str_idx    = 0;		/*indince dentro del string*/
+	static int contador_de_palabras = 0;	/*recuento de palabras vistas*/
 
 	while (frase[str_idx] != '\0') {
 
@@ -21,7 +21,7 @@ int main(){
 
 	int main(void) {
 		int resultado;
-		char line[100];
+		char line[100];	
 
 		printf("Ingresa un string: ");
 		fgets(line, sizeof(line), stdin);
