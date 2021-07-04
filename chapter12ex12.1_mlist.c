@@ -2,23 +2,23 @@
 #include <string.h>
 
 struct lista_de_correo {
-	char nombre[50];
-	int direccion;
-	char calle1[50];
-	char calle2[50];
-	char ciudad[50];
-	char estado[3];
-	int cp;
+	char nombre[50];		/* nombre del destinatario */
+	int direccion;			/* dirección (número de casa) */
+	char calle1[50];		/* nombre de la calle */
+	char calle2[50];		/* información adicional de la dirección */
+	char ciudad[50];		/* ciudad, pueblo */
+	char estado[3];			/* dos letras para el estado */
+	int cp;				/* codigo postal*/
 };
 
 void imprimir_lista(struct lista_de_correo *listac);
 
 int main(void) {
 
-
+	/* una lista que puede tener hasta 100 entradas */
 	struct lista_de_correo lista[100];
 
-
+	/* rellenar nuestra lista con algunos datos */
 
 	strcpy(lista[0].nombee, "Johnatan Domiguez");
 	lista[0].direccion = 123;
@@ -49,7 +49,7 @@ int main(void) {
 
 void imprimir_lista(struct lista_de_correo *listac) {
 
-	int i;
+	int i;				/* contador de bucle */
 
 	printf("LISTA DE CORREO\n\n");
 
