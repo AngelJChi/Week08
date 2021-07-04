@@ -2,13 +2,14 @@
 
 	int count(int number, int array[], int length) {
 
-
+	/* hemos llegado al principio del array. */
 	if (length == 0) {
 		return 0;
 	}
 
 	if (array[length - 1] == number) {
-
+		
+		/* incrementamos el contador cuando encontramos una coincidencia */
 		return(1 + count(number, array, length - 1));
 	} else {
 		return(count(number, array, length - 1));
